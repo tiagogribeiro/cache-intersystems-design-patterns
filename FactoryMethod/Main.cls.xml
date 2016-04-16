@@ -5,6 +5,7 @@
 <TimeCreated>64024,61194.705701</TimeCreated>
 
 <Method name="main">
+<Final>1</Final>
 <ClassMethod>1</ClassMethod>
 <Implementation><![CDATA[
 	

@@ -3,8 +3,10 @@
 <Class name="FactoryMethod.Focus">
 <Super>Carro</Super>
 <TimeCreated>64024,60908.357571</TimeCreated>
+<ClassDefinitionError>1</ClassDefinitionError>
 
 <Method name="criar">
+<Final>1</Final>
 <ClassMethod>1</ClassMethod>
 <ReturnType>Carro</ReturnType>
 <Implementation><![CDATA[	Quit ..%New("2.0")
@@ -12,6 +14,7 @@
 </Method>
 
 <Method name="getInfo">
+<Final>1</Final>
 <Implementation><![CDATA[	Quit "Focus - "_..potencia
 ]]></Implementation>
 </Method>

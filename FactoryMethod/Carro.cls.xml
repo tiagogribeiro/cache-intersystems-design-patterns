@@ -7,6 +7,7 @@
 
 <Property name="potencia">
 <Type>%String</Type>
+<Final>1</Final>
 <Private>1</Private>
 </Property>
 
@@ -22,6 +23,7 @@
 </Method>
 
 <Method name="criarCarro">
+<Final>1</Final>
 <ClassMethod>1</ClassMethod>
 <ReturnType>Carro</ReturnType>
 <Implementation><![CDATA[

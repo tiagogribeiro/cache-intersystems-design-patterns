@@ -7,10 +7,14 @@
 
 <Property name="next">
 <Type>BancoChain</Type>
+<Final>1</Final>
+<Private>1</Private>
 </Property>
 
 <Property name="identificadorDoBanco">
 <Type>%Integer</Type>
+<Final>1</Final>
+<Private>1</Private>
 </Property>
 
 <Method name="%OnNew">
@@ -26,6 +30,7 @@
 </Method>
 
 <Method name="setNext">
+<Final>1</Final>
 <FormalSpec>forma:BancoChain</FormalSpec>
 <Implementation><![CDATA[
 	if (..next = $$$NULLOID){
@@ -51,6 +56,7 @@
 </Method>
 
 <Method name="podeEfetuarPagamento">
+<Final>1</Final>
 <FormalSpec>id:IDBanco</FormalSpec>
 <ReturnType>%Boolean</ReturnType>
 <Implementation><![CDATA[

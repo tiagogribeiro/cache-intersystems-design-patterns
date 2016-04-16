@@ -6,11 +6,13 @@
 
 <Property name="modelo">
 <Type>%String</Type>
+<Final>1</Final>
 <Private>1</Private>
 </Property>
 
 <Property name="nome">
 <Type>%String</Type>
+<Final>1</Final>
 <Private>1</Private>
 </Property>
 
@@ -27,12 +29,14 @@
 </Method>
 
 <Method name="getNome">
+<Final>1</Final>
 <ReturnType>%String</ReturnType>
 <Implementation><![CDATA[	Quit ..nome
 ]]></Implementation>
 </Method>
 
 <Method name="getModelo">
+<Final>1</Final>
 <ReturnType>%String</ReturnType>
 <Implementation><![CDATA[	Quit ..modelo
 ]]></Implementation>
