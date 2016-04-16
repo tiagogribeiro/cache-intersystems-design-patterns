@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="State.PedidoState">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64024,66125.612567</TimeCreated>
+
+<Method name="carregado">
+<Final>1</Final>
+<ReturnType>PedidoCarregado</ReturnType>
+<Implementation><![CDATA[	Quit ##class(PedidoCarregado).%New()
+]]></Implementation>
+</Method>
+
+<Method name="aprovado">
+<Final>1</Final>
+<ReturnType>PedidoAprovado</ReturnType>
+<Implementation><![CDATA[	Quit ##class(PedidoAprovado).%New()
+]]></Implementation>
+</Method>
+
+<Method name="cancelado">
+<Final>1</Final>
+<ReturnType>PedidoCancelado</ReturnType>
+<Implementation><![CDATA[	Quit ##class(PedidoCancelado).%New()
+]]></Implementation>
+</Method>
+</Class>
+</Export>

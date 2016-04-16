@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="State.PedidoAprovado">
+<Super>Pedido</Super>
+<TimeCreated>64024,66234.195769</TimeCreated>
+
+<Method name="%OnNew">
+<Private>1</Private>
+<ReturnType>%Status</ReturnType>
+<ServerOnly>1</ServerOnly>
+<Implementation><![CDATA[
+	Set ..status = "Aprovado"
+	Set ..valor = 0
+	Quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

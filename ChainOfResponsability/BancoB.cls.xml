@@ -5,6 +5,7 @@
 <TimeCreated>64024,52240.850631</TimeCreated>
 
 <Method name="efetuaPagamento">
+<Final>1</Final>
 <FormalSpec>id:IDBanco</FormalSpec>
 <Implementation><![CDATA[	Write !,"Pagamento efetuado no banco B"
 ]]></Implementation>

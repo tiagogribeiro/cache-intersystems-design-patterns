@@ -6,6 +6,7 @@
 <TimeCreated>64024,59977.566149</TimeCreated>
 
 <Method name="criarCarro">
+<Final>1</Final>
 <ClassMethod>1</ClassMethod>
 <FormalSpec>modelo:ModeloCarro</FormalSpec>
 <ReturnType>Carro</ReturnType>

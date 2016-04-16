@@ -5,6 +5,7 @@
 <TimeCreated>64024,52048.290702</TimeCreated>
 
 <Method name="main">
+<Final>1</Final>
 <ClassMethod>1</ClassMethod>
 <Implementation><![CDATA[
 	#dim bancos As BancoChain
