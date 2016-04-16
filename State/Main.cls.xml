@@ -13,13 +13,13 @@
 	Write !,"Estado: "_pedido.getStatus()_" Valor:"_pedido.getValor()
 	
 	Set pedidoAprovado = pedido.pedidoAprovado()
-	Write !,"Estado: "_pedidoAprovado.getStatus()_" Valor:"_pedidoAprovado.getValor()
+	Write !,"Estado: "_pedidoAprovado.getStatus()_" Valor:"_pedidoAprovado.getValor()_" Class:"_pedidoAprovado.%ClassName()
 	
 	Set pedidoCarregado = pedido.pedidoCarregado()
-	Write !,"Estado: "_pedidoCarregado.getStatus()_" Valor:"_pedidoCarregado.getValor()
+	Write !,"Estado: "_pedidoCarregado.getStatus()_" Valor:"_pedidoCarregado.getValor()_" Class:"_pedidoCarregado.%ClassName()
 	
 	Set pedidoCancelado = pedido.pedidoCancelado()
-	Write !,"Estado: "_pedidoCancelado.getStatus()_" Valor:"_pedidoCancelado.getValor()
+	Write !,"Estado: "_pedidoCancelado.getStatus()_" Valor:"_pedidoCancelado.getValor()_" Class:"_pedidoCancelado.%ClassName()
 ]]></Implementation>
 </Method>
 </Class>
