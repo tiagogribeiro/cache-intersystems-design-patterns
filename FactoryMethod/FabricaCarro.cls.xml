@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="FactoryMethod.FabricaCarro">
+<Abstract>1</Abstract>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64024,59977.566149</TimeCreated>
+
+<Method name="criarCarro">
+<ClassMethod>1</ClassMethod>
+<FormalSpec>modelo:ModeloCarro</FormalSpec>
+<ReturnType>Carro</ReturnType>
+<Implementation><![CDATA[
+	#dim carro As Carro
+	Set carro = $Case(modelo,
+				##class(ModeloCarro).#FOCUS : ##class(Focus).criar(),
+				##class(ModeloCarro).#UNO : ##class(Uno).criar(),
+				##class(ModeloCarro).#GOL : ##class(Gol).criar())
+				
+	if ( carro = $$$NULLOREF ) {
+		Throw ##class(%Exception.General).%New("Não encontrado a fábrica para o carro.")
+	}
+	
+	Quit carro
+]]></Implementation>
+</Method>
+</Class>
+</Export>

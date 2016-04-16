@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="FactoryMethod.ModeloCarro">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64024,60165.190323</TimeCreated>
+
+<Parameter name="FOCUS">
+<Final>1</Final>
+<Default>1</Default>
+</Parameter>
+
+<Parameter name="UNO">
+<Final>1</Final>
+<Default>2</Default>
+</Parameter>
+
+<Parameter name="GOL">
+<Final>1</Final>
+<Default>3</Default>
+</Parameter>
+</Class>
+</Export>

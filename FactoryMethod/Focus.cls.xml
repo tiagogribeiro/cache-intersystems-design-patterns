@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="FactoryMethod.Focus">
+<Super>Carro</Super>
+<TimeCreated>64024,60908.357571</TimeCreated>
+
+<Method name="criar">
+<ClassMethod>1</ClassMethod>
+<ReturnType>Carro</ReturnType>
+<Implementation><![CDATA[	Quit ..%New("2.0")
+]]></Implementation>
+</Method>
+
+<Method name="getInfo">
+<Implementation><![CDATA[	Quit "Focus - "_..potencia
+]]></Implementation>
+</Method>
+</Class>
+</Export>
