@@ -43,7 +43,7 @@
 		Do ..efetuaPagamento()
 	} else {
 		if (..next = $$$NULLOID){
-			$$$ThrowStatus(5002)
+			Throw ##class(%Exception.General).%New("Banco para pagamento não encontrado.")
 		}
 		Do ..next.efetuarPagamento( id )
 	}
