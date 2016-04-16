@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Builder.CelularBuilder">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64024,65285.976016</TimeCreated>
+
+<Property name="modelo">
+<Type>%String</Type>
+<Private>1</Private>
+</Property>
+
+<Property name="nome">
+<Type>%String</Type>
+<Private>1</Private>
+</Property>
+
+<Method name="comNome">
+<FormalSpec>nome:%String</FormalSpec>
+<ReturnType>CelularBuilder</ReturnType>
+<Implementation><![CDATA[
+	Set ..nome = nome
+	Quit ##this
+]]></Implementation>
+</Method>
+
+<Method name="comModelo">
+<FormalSpec>modelo:%String</FormalSpec>
+<ReturnType>CelularBuilder</ReturnType>
+<Implementation><![CDATA[
+	Set ..modelo = modelo
+	Quit ##this
+]]></Implementation>
+</Method>
+
+<Method name="getNome">
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	Quit ..nome
+]]></Implementation>
+</Method>
+
+<Method name="getModelo">
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	Quit ..modelo
+]]></Implementation>
+</Method>
+
+<Method name="build">
+<ReturnType>Celular</ReturnType>
+<Implementation><![CDATA[	Quit ##class(Celular).%New( ##this )
+]]></Implementation>
+</Method>
+</Class>
+</Export>
