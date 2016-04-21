@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
 <Class name="State.PedidoCancelado">
-<Super>Pedido</Super>
+<Super>PedidoState</Super>
 <TimeCreated>64024,66243.276685</TimeCreated>
 
 <Method name="%OnNew">
@@ -9,8 +9,7 @@
 <ReturnType>%Status</ReturnType>
 <ServerOnly>1</ServerOnly>
 <Implementation><![CDATA[
-	Set ..status = "Cancelado"
-	Set ..valor = -10
+	Write !,"Cancelado"
 	
 	Quit $$$OK
 ]]></Implementation>

@@ -10,62 +10,35 @@
 <Private>1</Private>
 </Property>
 
-<Property name="valor">
-<Type>%Double</Type>
-<Final>1</Final>
-<InitialExpression>0</InitialExpression>
-<Private>1</Private>
-</Property>
-
-<Property name="status">
-<Type>%String</Type>
-<Final>1</Final>
-<InitialExpression>"Normal"</InitialExpression>
-<Private>1</Private>
-</Property>
-
 <Method name="%OnNew">
 <Private>1</Private>
 <ReturnType>%Status</ReturnType>
 <ServerOnly>1</ServerOnly>
 <Implementation><![CDATA[
 	Set ..estado = ##class(PedidoState).%New()
+	Write !,"Normal."
 	Quit $$$OK
 ]]></Implementation>
 </Method>
 
-<Method name="getValor">
+<Method name="aprovado">
 <Final>1</Final>
-<ReturnType>%Double</ReturnType>
-<Implementation><![CDATA[	Quit ..valor
+<ReturnType>PedidoState</ReturnType>
+<Implementation><![CDATA[	Set ..estado = ..estado.aprovado()
 ]]></Implementation>
 </Method>
 
-<Method name="getStatus">
+<Method name="cancelado">
 <Final>1</Final>
-<ReturnType>%String</ReturnType>
-<Implementation><![CDATA[	Quit ..status
+<ReturnType>PedidoState</ReturnType>
+<Implementation><![CDATA[	Set ..estado = ..estado.cancelado()
 ]]></Implementation>
 </Method>
 
-<Method name="pedidoAprovado">
+<Method name="carregado">
 <Final>1</Final>
-<ReturnType>PedidoAprovado</ReturnType>
-<Implementation><![CDATA[	Quit ..estado.aprovado()
-]]></Implementation>
-</Method>
-
-<Method name="pedidoCancelado">
-<Final>1</Final>
-<ReturnType>PedidoCancelado</ReturnType>
-<Implementation><![CDATA[	Quit ..estado.cancelado()
-]]></Implementation>
-</Method>
-
-<Method name="pedidoCarregado">
-<Final>1</Final>
-<ReturnType>PedidoCarregado</ReturnType>
-<Implementation><![CDATA[	Quit ..estado.carregado()
+<ReturnType>PedidoState</ReturnType>
+<Implementation><![CDATA[	Set ..estado = ..estado.carregado()
 ]]></Implementation>
 </Method>
 </Class>
