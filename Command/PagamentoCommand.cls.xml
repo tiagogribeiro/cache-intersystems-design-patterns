@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Command.PagamentoCommand">
+<Abstract>1</Abstract>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64029,70962.05981</TimeCreated>
+
+<Method name="processarCompra">
+<FormalSpec>compra:Compra</FormalSpec>
+</Method>
+</Class>
+</Export>
