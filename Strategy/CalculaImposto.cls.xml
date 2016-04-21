@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Strategy.CalculaImposto">
+<Abstract>1</Abstract>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64029,66873.416382</TimeCreated>
+
+<Method name="calculaSalarioComImposto">
+<FormalSpec>funcionario:Funcionario</FormalSpec>
+<ReturnType>%Double</ReturnType>
+<Implementation><![CDATA[	Quit 0
+]]></Implementation>
+</Method>
+</Class>
+</Export>
