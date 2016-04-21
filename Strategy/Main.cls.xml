@@ -7,6 +7,8 @@
 <Method name="main">
 <ClassMethod>1</ClassMethod>
 <Implementation><![CDATA[
+	#dim funcionario As Funcionario
+	
 	Set funcionario = ##class(Funcionario).%New( ##class(Funcionario).#DESENVOLVEDOR, 2100)
 	Write !,funcionario.calcularSalarioComImposto()
 	
