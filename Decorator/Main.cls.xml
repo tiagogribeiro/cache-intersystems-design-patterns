@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Decorator.Main">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64039,66721.827804</TimeCreated>
+
+<Method name="main">
+<ClassMethod>1</ClassMethod>
+<Implementation><![CDATA[
+	#dim coquetel As Coquetel
+	
+	Set coquetel = ##class(Cachaca).%New()
+	Write !,coquetel.getNome()_" - "_coquetel.getPreco()
+	
+	Set coquetel = ##class(Refrigerante).%New( coquetel )
+	Write !,coquetel.getNome()_" - "_coquetel.getPreco()
+]]></Implementation>
+</Method>
+</Class>
+</Export>

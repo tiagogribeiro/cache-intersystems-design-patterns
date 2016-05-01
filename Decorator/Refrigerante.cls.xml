@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Decorator.Refrigerante">
+<Super>CoquetelDecorator</Super>
+<TimeCreated>64039,67379.902718</TimeCreated>
+
+<Method name="%OnNew">
+<FormalSpec>coquetel:Coquetel</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	Do ##super( coquetel )
+	Set ..nome ="Refrigerante"
+	Set ..preco = 1.0
+	
+	Quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

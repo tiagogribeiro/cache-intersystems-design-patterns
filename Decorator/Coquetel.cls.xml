@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Decorator.Coquetel">
+<Abstract>1</Abstract>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64039,66961.943207</TimeCreated>
+
+<Property name="nome">
+<Type>%String</Type>
+<Private>1</Private>
+</Property>
+
+<Property name="preco">
+<Type>%Double</Type>
+<Private>1</Private>
+</Property>
+
+<Method name="getNome">
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	Quit ..nome
+]]></Implementation>
+</Method>
+
+<Method name="getPreco">
+<ReturnType>%Double</ReturnType>
+<Implementation><![CDATA[	Quit ..preco
+]]></Implementation>
+</Method>
+</Class>
+</Export>
