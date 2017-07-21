@@ -1,0 +1,7 @@
+Builder.pkg
+ChainOfResponsability.pkg
+Command.pkg
+Decorator.pkg
+FactoryMethod.pkg
+State.pkg
+Strategy.pkg
