@@ -3,7 +3,6 @@
 <Class name="FactoryMethod.Focus">
 <Super>Carro</Super>
 <TimeCreated>64024,60908.357571</TimeCreated>
-<ClassDefinitionError>1</ClassDefinitionError>
 
 <Method name="criar">
 <Final>1</Final>
