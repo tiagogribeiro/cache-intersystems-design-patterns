@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Adapter.Twitter">
+<Description>
+Classes de fictícia da API do Twitter.</Description>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64489,31960.634114</TimeCreated>
+
+<Method name="send">
+<FormalSpec>mensagem:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[    write mensagem
+]]></Implementation>
+</Method>
+</Class>
+</Export>

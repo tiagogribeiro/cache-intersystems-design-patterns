@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Adapter.ISocialAdapter">
+<Abstract>1</Abstract>
+<TimeCreated>64489,31735.640084</TimeCreated>
+
+<Method name="send">
+<FormalSpec>mensagem:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+</Method>
+</Class>
+</Export>

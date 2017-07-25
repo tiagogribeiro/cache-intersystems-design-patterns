@@ -1,3 +1,4 @@
+Adapter.pkg
 Builder.pkg
 ChainOfResponsability.pkg
 Command.pkg
