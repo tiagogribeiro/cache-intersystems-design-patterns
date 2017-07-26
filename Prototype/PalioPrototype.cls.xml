@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Prototype.PalioPrototype">
+<Super>CarroPrototype,%RegisteredObject</Super>
+<TimeCreated>64490,32085.388317</TimeCreated>
+
+<Method name="%OnNew">
+<FormalSpec>palioPrototype:PalioPrototype=""</FormalSpec>
+<Private>1</Private>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    if ($isObject(palioPrototype)){
+        set ..valorCompra = palioPrototype.getValorCompra()
+    } else {
+        set ..valorCompra = 0.0
+    }
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="clonar">
+<ReturnType>PalioPrototype</ReturnType>
+<Implementation><![CDATA[    return ..%New( ##this )
+]]></Implementation>
+</Method>
+
+<Method name="exibirInformacao">
+<Implementation><![CDATA[    quit "Modelo: Palio - Valor:"_..getValorCompra()
+]]></Implementation>
+</Method>
+</Class>
+</Export>

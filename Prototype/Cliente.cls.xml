@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Prototype.Cliente">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64490,34412.653235</TimeCreated>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    #dim palioUsado,palioNovo As Prototype.PalioPrototype
+    set palioNovo = ##class(Prototype.PalioPrototype).%New()
+    do palioNovo.setValorCompra( 15000 )
+    
+    set palioUsado = palioNovo.clonar()
+    do palioUsado.setValorCompra( 8000 )
+    
+    write !,palioNovo.exibirInformacao()
+    write !,palioUsado.exibirInformacao()
+    
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

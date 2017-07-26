@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Prototype.FiestaPrototype">
+<Super>CarroPrototype,%RegisteredObject</Super>
+<TimeCreated>64490,31576.065607</TimeCreated>
+
+<Method name="%OnNew">
+<FormalSpec>fiestaPrototype:FiestaPrototype=""</FormalSpec>
+<Private>1</Private>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    if ($isObject(fiestaPrototype)){
+        set ..valorCompra = fiestaPrototype.getValorCompra()
+    } else {
+        set ..valorCompra = 0.0
+    }
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="clonar">
+<ReturnType>FiestaPrototype</ReturnType>
+<Implementation><![CDATA[    return ..%New( ##this )
+]]></Implementation>
+</Method>
+
+<Method name="exibirInformacao">
+<Implementation><![CDATA[    quit "Modelo: Fiesta - Valor:"_..getValorCompra()
+]]></Implementation>
+</Method>
+</Class>
+</Export>
