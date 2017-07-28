@@ -3,6 +3,7 @@ Bridge.pkg
 Builder.pkg
 ChainOfResponsability.pkg
 Command.pkg
+Composite.pkg
 Decorator.pkg
 FactoryMethod.pkg
 Prototype.pkg

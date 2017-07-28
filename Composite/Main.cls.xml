@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Composite.Main">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64492,55037.358343</TimeCreated>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set blocaA = ##class(Bloco).%New( "A) Formação Educacional" )
+    set questao1 = ##class(Questao).%New( "Qual formação" )
+    set questao2 = ##class(Questao).%New( "Pretente fazer alguma pós-gradução?" )
+    
+    do blocaA.adicionar( questao1 )
+    do blocaA.adicionar( questao2 )       
+    
+    set blocoRaiz = ##class(Bloco).%New( "Inicio ")
+    do blocoRaiz.adicionar( blocaA )
+    do blocoRaiz.exibir()
+     
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

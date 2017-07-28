@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Composite.Questao">
+<Super>Composite.ElementoDoQuestionario</Super>
+<TimeCreated>64492,55010.6661</TimeCreated>
+
+<Method name="exibir">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    write !,$$$FormatText( "Questão %1",  ..descricao)
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

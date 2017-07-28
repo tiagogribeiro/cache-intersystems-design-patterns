@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Composite.Bloco">
+<Super>ElementoDoQuestionario</Super>
+<TimeCreated>64492,54543.997213</TimeCreated>
+
+<Property name="elementos">
+<Type>ElementoDoQuestionario</Type>
+<Collection>list</Collection>
+</Property>
+
+<Method name="exibir">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    #dim elemento As Composite.ElementoDoQuestionario
+    #dim indice As %String =""
+    
+    write !,$$$FormatText("Bloco %1", ..descricao)
+    for {
+        set elemento = ..elementos.GetNext(.indice)
+        quit:(indice="")
+        
+        do elemento.exibir()
+    }
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="adicionar">
+<FormalSpec>elemento:Composite.ElementoDoQuestionario</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[    quit ..elementos.Insert( elemento )
+]]></Implementation>
+</Method>
+
+<Method name="remover">
+<FormalSpec>elemento:Composite.ElementoDoQuestionario</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    #dim elementoId As %String
+    set elementoId =  ..elementos.FindOref( elemento )
+    if (elementoId'=""){
+        quit ..elementos.RemoveAt( elementoId )
+    }
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
