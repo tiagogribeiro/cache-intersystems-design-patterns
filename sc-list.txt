@@ -1,4 +1,5 @@
 Adapter.pkg
+Bridge.pkg
 Builder.pkg
 ChainOfResponsability.pkg
 Command.pkg

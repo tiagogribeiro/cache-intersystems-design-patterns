@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Bridge.IJanelaImplementada">
+<Abstract>1</Abstract>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64491,31860.581178</TimeCreated>
+
+<Method name="desenharJanela">
+<FormalSpec>titulo:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+</Method>
+
+<Method name="desenharBotao">
+<FormalSpec>rotulo:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+</Method>
+</Class>
+</Export>
