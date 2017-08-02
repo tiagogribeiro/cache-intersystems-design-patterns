@@ -5,6 +5,7 @@ ChainOfResponsability.pkg
 Command.pkg
 Composite.pkg
 Decorator.pkg
+Facade.pkg
 FactoryMethod.pkg
 Prototype.pkg
 State.pkg

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Facade.Main">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64497,30866.458316</TimeCreated>
+
+<Method name="%OnNew">
+<Private>1</Private>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    
+    set sistemas = ##class(Facade.SistemasFacade).%New()
+    
+    write !,"Iniciando sistema de som."
+    do sistemas.reproduzirSom()
+    
+    write !,"Exibindo imagem."
+    do sistemas.reproduzirImagem()       
+    
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

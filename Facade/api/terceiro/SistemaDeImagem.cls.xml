@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Facade.api.terceiro.SistemaDeImagem">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64497,31087.201373</TimeCreated>
+
+<Method name="configurarCores">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    write !,"Configurando as cores."
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="configurarResolucao">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    write !,"Configurando as resolução."
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="reproduzir">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    write !,"Reproduzindo... (imagem)"
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
