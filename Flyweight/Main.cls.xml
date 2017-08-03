@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Flyweight.Main">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64498,30875.492902</TimeCreated>
+
+<Method name="%OnNew">
+<Private>1</Private>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set factory = ##class(FlyweightFactory).%New()
+    do factory.getFlyweight( ##class(FlyweightFactory).#JOGADOR ).desenharImagem( ##class(Ponto).%New(5,3) )
+    do factory.getFlyweight( ##class(FlyweightFactory).#INIMIGOu1 ).desenharImagem( ##class(Ponto).%New(1,2) )
+    do factory.getFlyweight( ##class(FlyweightFactory).#INIMIGOu2 ).desenharImagem( ##class(Ponto).%New(4,3) )
+    do factory.getFlyweight( ##class(FlyweightFactory).#INIMIGOu3 ).desenharImagem( ##class(Ponto).%New(7,8) )
+    do factory.getFlyweight( ##class(FlyweightFactory).#CENARIOu1 ).desenharImagem( ##class(Ponto).%New(0,2) )
+    do factory.getFlyweight( ##class(FlyweightFactory).#CENARIOu2 ).desenharImagem( ##class(Ponto).%New(7,2) )
+    
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

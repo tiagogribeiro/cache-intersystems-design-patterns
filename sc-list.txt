@@ -7,6 +7,7 @@ Composite.pkg
 Decorator.pkg
 Facade.pkg
 FactoryMethod.pkg
+Flyweight.pkg
 Prototype.pkg
 State.pkg
 Strategy.pkg

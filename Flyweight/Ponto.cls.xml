@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Flyweight.Ponto">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64498,30054.246579</TimeCreated>
+
+<Property name="x">
+<Type>%Integer</Type>
+</Property>
+
+<Property name="y">
+<Type>%Integer</Type>
+</Property>
+
+<Method name="%OnNew">
+<FormalSpec>x:%Integer,y:%Integer</FormalSpec>
+<Private>1</Private>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set ..x = x
+    set ..y = y
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

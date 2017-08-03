@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Flyweight.SpriteFlyweight">
+<Abstract>1</Abstract>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64498,30115.378213</TimeCreated>
+
+<Method name="desenharImagem">
+<FormalSpec>ponto:Ponto</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
