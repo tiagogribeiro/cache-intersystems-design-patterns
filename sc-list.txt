@@ -9,5 +9,6 @@ Facade.pkg
 FactoryMethod.pkg
 Flyweight.pkg
 Prototype.pkg
+Proxy.pkg
 State.pkg
 Strategy.pkg

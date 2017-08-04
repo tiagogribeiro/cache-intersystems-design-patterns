@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Proxy.Usuario">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64499,31582.915271</TimeCreated>
+
+<Property name="quantidadeDeUsuarios">
+<Type>%Integer</Type>
+</Property>
+
+<Property name="usuariosConectados">
+<Type>%Integer</Type>
+</Property>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set ..quantidadeDeUsuarios = $random(999)
+    set ..usuariosConectados = $random(999)
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="getNumeroDeUsuarios">
+<ReturnType>%Integer</ReturnType>
+<Implementation><![CDATA[    quit ..quantidadeDeUsuarios
+]]></Implementation>
+</Method>
+
+<Method name="getUsuariosConectados">
+<ReturnType>%Integer</ReturnType>
+<Implementation><![CDATA[    quit ..usuariosConectados
+]]></Implementation>
+</Method>
+</Class>
+</Export>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Proxy.Main">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64499,31814.032013</TimeCreated>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set usuario = ##class(UsuarioProxy).%New()
+    
+    write !,usuario.getNumeroDeUsuarios()
+    write !,usuario.getUsuariosConectados()
+    
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
