@@ -6,3 +6,4 @@ Study of design patterns implemented in Caché Intersystems.
 Fonts:
 - https://brizeno.wordpress.com/padroes/
 - https://en.wikipedia.org
+- Design Patterns: Elements of Reusable Object-Oriented Software - of Erich Gamma (Autor), Richard Helm (Autor), Ralph Johnson (Autor), John Vlissides (Autor)
