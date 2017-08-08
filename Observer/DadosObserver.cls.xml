@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Observer.DadosObserver">
+<Abstract>1</Abstract>
+<Super>%RegisteredObject</Super>
+<TimeCreated>64503,31382.178962</TimeCreated>
+
+<Property name="dados">
+<Type>DadosSubject</Type>
+</Property>
+
+<Method name="%OnNew">
+<FormalSpec>dados:DadosSubject</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set ..dados = dados
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="update">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

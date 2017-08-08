@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Observer.PorcentoObserver">
+<Super>DadosObserver</Super>
+<TimeCreated>64503,31862.535141</TimeCreated>
+
+<Method name="%OnNew">
+<FormalSpec>dados:DadosSubject</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+   do ##super(dados)
+   quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="update">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    write !,"Porcento:",(..dados.getState().valorA/..dados.getState().valorB)*..dados.getState().valorC
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
