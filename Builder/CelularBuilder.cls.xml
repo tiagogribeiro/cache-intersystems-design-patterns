@@ -36,20 +36,6 @@
 ]]></Implementation>
 </Method>
 
-<Method name="getNome">
-<Final>1</Final>
-<ReturnType>%String</ReturnType>
-<Implementation><![CDATA[	Quit ..nome
-]]></Implementation>
-</Method>
-
-<Method name="getModelo">
-<Final>1</Final>
-<ReturnType>%String</ReturnType>
-<Implementation><![CDATA[	Quit ..modelo
-]]></Implementation>
-</Method>
-
 <Method name="build">
 <Final>1</Final>
 <ReturnType>Celular</ReturnType>
