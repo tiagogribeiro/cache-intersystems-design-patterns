@@ -17,13 +17,13 @@
 </Property>
 
 <Method name="%OnNew">
-<FormalSpec>build:CelularBuilder</FormalSpec>
+<FormalSpec>modelo:%String,nome:%String</FormalSpec>
 <Private>1</Private>
 <ReturnType>%Status</ReturnType>
 <ServerOnly>1</ServerOnly>
 <Implementation><![CDATA[
-	Set ..modelo = build.getModelo()
-	Set ..nome = build.getNome()
+	Set ..modelo = modelo
+	Set ..nome = nome
 	Quit $$$OK
 ]]></Implementation>
 </Method>

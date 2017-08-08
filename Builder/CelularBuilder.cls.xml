@@ -21,8 +21,8 @@
 <FormalSpec>nome:%String</FormalSpec>
 <ReturnType>CelularBuilder</ReturnType>
 <Implementation><![CDATA[
-	Set ..nome = nome
-	Quit ##this
+    Set ..nome = nome
+    Quit ##this
 ]]></Implementation>
 </Method>
 
@@ -31,15 +31,15 @@
 <FormalSpec>modelo:%String</FormalSpec>
 <ReturnType>CelularBuilder</ReturnType>
 <Implementation><![CDATA[
-	Set ..modelo = modelo
-	Quit ##this
+    Set ..modelo = modelo
+    Quit ##this
 ]]></Implementation>
 </Method>
 
 <Method name="build">
 <Final>1</Final>
 <ReturnType>Celular</ReturnType>
-<Implementation><![CDATA[	Quit ##class(Celular).%New( ##this )
+<Implementation><![CDATA[    quit ##class(Celular).%New( ..modelo, ..nome )
 ]]></Implementation>
 </Method>
 </Class>
