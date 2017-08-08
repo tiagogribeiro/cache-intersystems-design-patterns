@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-<Class name="Prototype.Cliente">
+<Class name="Prototype.Main">
 <Super>%RegisteredObject</Super>
-<TimeCreated>64490,34412.653235</TimeCreated>
+<TimeCreated>64503,56075.182954</TimeCreated>
 
 <Method name="%OnNew">
 <ReturnType>%Status</ReturnType>

@@ -8,21 +8,21 @@
 <Final>1</Final>
 <ClassMethod>1</ClassMethod>
 <Implementation><![CDATA[
-	#dim bancos As BancoChain
-	
-	Set bancos = ##class(BancoA).%New()
-	Do bancos.setNext( ##class(BancoB).%New() )
-	Do bancos.setNext( ##class(BancoC).%New() )
-	Do bancos.setNext( ##class(BancoD).%New() )
-	
-	Try {
-		Do bancos.efetuarPagamento( ##class(IDBanco).#BANCOuC )
-		Do bancos.efetuarPagamento( ##class(IDBanco).#BANCOuD )
-		Do bancos.efetuarPagamento( ##class(IDBanco).#BANCOuA )
-		Do bancos.efetuarPagamento( ##class(IDBanco).#BANCOuB )		
-	} Catch exception {
-		W !,$$$FormatText("[Error] %1 %2", exception.Name, exception.Data )	
-	}
+    #dim bancos As BancoChain
+    
+    Set bancos = ##class(BancoA).%New()
+    Do bancos.setNext( ##class(BancoB).%New() )
+    Do bancos.setNext( ##class(BancoC).%New() )
+    Do bancos.setNext( ##class(BancoD).%New() )
+    
+    Try {
+        Do bancos.efetuarPagamento( ##class(IDBanco).#BANCOuC )
+        Do bancos.efetuarPagamento( ##class(IDBanco).#BANCOuD )
+        Do bancos.efetuarPagamento( ##class(IDBanco).#BANCOuA )
+        Do bancos.efetuarPagamento( ##class(IDBanco).#BANCOuB )     
+    } Catch exception {
+        W !,$$$FormatText("[Error] %1 %2", exception.Name, exception.Data ) 
+    }
 ]]></Implementation>
 </Method>
 </Class>

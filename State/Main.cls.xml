@@ -4,19 +4,19 @@
 <Super>%RegisteredObject</Super>
 <TimeCreated>64024,66622.02355</TimeCreated>
 
-<Method name="main">
-<ClassMethod>1</ClassMethod>
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
 <Implementation><![CDATA[
-	#dim pedido As Pedido
-	
-	Set pedido = ##class(Pedido).%New()
-		
-	Do pedido.aprovado()
-	Do pedido.carregado()
-	Do pedido.cancelado()
-	Do pedido.cancelado()
-	Do pedido.carregado()
-	Do pedido.aprovado()
+    #dim pedido As Pedido
+    
+    Set pedido = ##class(Pedido).%New()
+        
+    Do pedido.aprovado()
+    Do pedido.carregado()
+    Do pedido.cancelado()
+    Do pedido.cancelado()
+    Do pedido.carregado()
+    Do pedido.aprovado()
 ]]></Implementation>
 </Method>
 </Class>

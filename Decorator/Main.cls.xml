@@ -5,15 +5,16 @@
 <TimeCreated>64039,66721.827804</TimeCreated>
 
 <Method name="main">
+<Final>1</Final>
 <ClassMethod>1</ClassMethod>
 <Implementation><![CDATA[
-	#dim coquetel As Coquetel
-	
-	Set coquetel = ##class(Cachaca).%New()
-	Write !,coquetel.getNome()_" - "_coquetel.getPreco()
-	
-	Set coquetel = ##class(Refrigerante).%New( coquetel )
-	Write !,coquetel.getNome()_" - "_coquetel.getPreco()
+    #dim coquetel As Coquetel
+    
+    Set coquetel = ##class(Cachaca).%New()
+    Write !,coquetel.getNome()_" - "_coquetel.getPreco()
+    
+    Set coquetel = ##class(Refrigerante).%New( coquetel )
+    Write !,coquetel.getNome()_" - "_coquetel.getPreco()
 ]]></Implementation>
 </Method>
 </Class>
