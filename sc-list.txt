@@ -13,3 +13,4 @@ Prototype.pkg
 Proxy.pkg
 State.pkg
 Strategy.pkg
+Visitor.pkg

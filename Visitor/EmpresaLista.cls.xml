@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Visitor.EmpresaLista">
+<Super>%ListOfDataTypes,Visitor.Visitable</Super>
+<TimeCreated>64504,30815.881866</TimeCreated>
+
+<Method name="accept">
+<FormalSpec>visitor:Visitor.Visitor</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    do visitor.visit( ##this )
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Storage name="Custom">
+<Type>%Library.CompleteCustomStorage</Type>
+</Storage>
+</Class>
+</Export>

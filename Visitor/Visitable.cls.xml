@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Visitor.Visitable">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64504,32671.778929</TimeCreated>
+
+<Method name="accept">
+<FormalSpec>visitor:Visitor.Visitor</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    do visitor.visit( ##this )
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
