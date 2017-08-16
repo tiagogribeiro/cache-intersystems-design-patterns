@@ -13,4 +13,5 @@ Prototype.pkg
 Proxy.pkg
 State.pkg
 Strategy.pkg
+TemplateMethod.pkg
 Visitor.pkg

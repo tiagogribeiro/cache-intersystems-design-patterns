@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="TemplateMethod.Main">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64511,31486.302971</TimeCreated>
+
+<Method name="%OnNew">
+<Private>1</Private>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set concrete = ##class(ConcreteClass).%New()
+    do concrete.exibirCodigo()
+    do concrete.exibirNome()
+    do concrete.exibirNomeECodigoJuntos()
+    
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
