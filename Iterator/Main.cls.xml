@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Iterator.Main">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64512,31168.067689</TimeCreated>
+
+<Method name="%OnNew">
+<Private>1</Private>
+<ReturnType>%Status</ReturnType>
+<ServerOnly>1</ServerOnly>
+<Implementation><![CDATA[
+    #dim empresas As %ListOfDataTypes
+    #dim iterator As EmpresaListIterator
+    
+    set empresas = ##class(EmpresaList).create()
+    set iterator = ##class(EmpresaListIterator).%New( empresas )
+    
+    do iterator.next()
+    for {
+        quit:(iterator.isDone())
+        write !,iterator.currentItem()
+        do iterator.next()
+    }
+    
+    Quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

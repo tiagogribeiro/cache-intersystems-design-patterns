@@ -8,6 +8,7 @@ Decorator.pkg
 Facade.pkg
 FactoryMethod.pkg
 Flyweight.pkg
+Iterator.pkg
 Observer.pkg
 Prototype.pkg
 Proxy.pkg
