@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Memento.Main">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64513,31609.090488</TimeCreated>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    
+    set texto = ##class(Texto).%New()
+    do texto.escreverTexto(" Nenhuma noite por mais escura que seja pode impedir o amanhecer.  ")
+    do texto.escreverTexto(" Não há derrota que derrube, quem nasceu para vencer. ")
+    do texto.escreverTexto(" Quando a gente pensa que sabe todas as respostas, vem a vida e muda todas as perguntas.  ")
+    
+    write !,"~~~~~~~~~~~~~~~~"
+    
+    do texto.mostrarTexto()
+    do texto.desfazerEscrita()
+    
+    write !,"~~~~~~~~~~~~~~~~"
+    
+    do texto.mostrarTexto()
+    do texto.desfazerEscrita()
+    
+    write !,"~~~~~~~~~~~~~~~~"
+    do texto.mostrarTexto()
+    do texto.desfazerEscrita()
+    
+    write !,"~~~~~~~~~~~~~~~~"
+    do texto.mostrarTexto()
+    
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>

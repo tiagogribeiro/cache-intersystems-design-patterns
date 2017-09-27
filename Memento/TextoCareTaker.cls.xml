@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Memento.TextoCareTaker">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64513,30935.692125</TimeCreated>
+
+<Property name="estados">
+<Type>TextoMemento</Type>
+<Collection>list</Collection>
+<Private>1</Private>
+</Property>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set ..estados = ##class(%ListOfObjects).%New()
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="adicionarMemento">
+<FormalSpec>textoMemento:TextoMemento</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    do ..estados.Insert( textoMemento )
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="getUltimoEstadoTexto">
+<ReturnType>TextoMemento</ReturnType>
+<Implementation><![CDATA[
+    do ..estados.RemoveAt( ..estados.Count() )
+    if ( ..estados.Count() <=0 ){
+        quit ##class(TextoMemento).%New("")
+    }
+    
+    quit ..estados.GetAt( ..estados.Count() )
+]]></Implementation>
+</Method>
+</Class>
+</Export>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Memento.Texto">
+<Super>%RegisteredObject</Super>
+<TimeCreated>64513,31298.106134</TimeCreated>
+
+<Property name="texto">
+<Type>%String</Type>
+<Private>1</Private>
+</Property>
+
+<Property name="careTaker">
+<Type>TextoCareTaker</Type>
+<Private>1</Private>
+</Property>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set ..careTaker = ##class(TextoCareTaker).%New()
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="escreverTexto">
+<FormalSpec>novoTexto:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+   do ..careTaker.adicionarMemento( ##class(TextoMemento).%New( ..texto_novoTexto ) )
+   set ..texto = ..texto_novoTexto
+   quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="desfazerEscrita">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    set ..texto = ..careTaker.getUltimoEstadoTexto().getTexto()
+    quit $$$OK
+]]></Implementation>
+</Method>
+
+<Method name="mostrarTexto">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+    write !,..texto
+    quit $$$OK
+]]></Implementation>
+</Method>
+</Class>
+</Export>
