@@ -9,6 +9,7 @@ Facade.pkg
 FactoryMethod.pkg
 Flyweight.pkg
 Iterator.pkg
+Mediator.pkg
 Memento.pkg
 Observer.pkg
 Prototype.pkg
