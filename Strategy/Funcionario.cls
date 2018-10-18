@@ -15,10 +15,10 @@ Method %OnNew(cargo As %Integer, salarioBase As %Double) As %Status
 {
 	Set ..salarioBase = salarioBase
 	Set ..estrategiaCalculo = $Case(cargo,
-									..#DESENVOLVEDOR: ##class(CalculoImpostoQuizeOuDez).%New(),
-									..#DBA : ##class(CalculoImpostoQuizeOuDez).%New(),
-									..#GERENTE : ##class(CalculoImpostoVinteOuQuize).%New()
-								 )
+		..#DESENVOLVEDOR: ##class(CalculoImpostoQuizeOuDez).%New(),
+		..#DBA : ##class(CalculoImpostoQuizeOuDez).%New(),
+		..#GERENTE : ##class(CalculoImpostoVinteOuQuize).%New()
+	)
 	 Quit $$$OK
 }
 
